@@ -3001,11 +3001,23 @@ p.center {
 }
 
 .menu-wrapper {
-  padding: 60px 56px;
+  /* padding: 60px 56px; */
+  padding: 3em 5px;
   background-color: #8eaeba;
   color: #fff;
   z-index: 1;
 }
+
+/* @media only screen and (max-width: 750px) {
+  .menu-wrapper {
+    padding: 0px;
+    background-color: #8eaeba;
+    color: #fff;
+    z-index: 1;
+  }
+} */
+
+
 .menu-wrapper .neela-style {
   --offset: 10px;
   --border-size: 1px;

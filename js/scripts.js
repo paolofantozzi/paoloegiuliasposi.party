@@ -580,7 +580,7 @@ var Neela;
                         anchor: 8,
                         anchorPoint: new google.maps.Point(0, -50),
                         shadow: "none",
-                        content: "<div class=\"marker\"><i class=\"fa " + icon + "\"></i></div>"
+                        content: "<div class=\"marker\" style=\"border: 2px solid #ff0000;\"><i class=\"fa " + icon + "\"></i></div>"
                     });
 
                     google.maps.event.addListener(marker, "click", function () {
@@ -628,7 +628,9 @@ var Neela;
             if ($(".timeline-gallery").length) {
                 $(".timeline-gallery").owlCarousel({
                     nav: true,
-                    dots: false,
+                    dots: true,
+                    autoplay: true,
+                    loop: true,
                     responsive: {
                         "0": {
                             items: 1
